@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  node:
+    build:
+      context: .
+      dockerfile: DockerFile
+    ports:
+      - "3000:3000"
+      - "4000:4000"
+      - "5000:5000"
+    volumes:
+      - .app:/app
