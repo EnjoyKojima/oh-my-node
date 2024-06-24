@@ -8,6 +8,6 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - .app:/app
+      - ./app:/app
     tty: true
     stdin_open: true
